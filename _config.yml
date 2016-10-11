@@ -1,133 +1,31 @@
-# Where things are
-source:       .
-destination:  ./_site
-plugins:      ./_plugins
-layouts:      ./_layouts
-paginate:     8
+markdown: kramdown
+highlighter: pygments
+permalink: /posts/:title.html
+excerpt_separator: "<!-- more -->"
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext:  "textile"
+github: panxw
+author: "潘学文"
+email: winfirm#163.com
+name: "潘学文个人博客"
+url: http://www.panxw.com
+domain: www.panxw.com
+all_categories: [
+["android", "Android开发","/posts/android.html"], 
+["program", "软件编程","/posts/program.html"],
+["web", "Web建站","/posts/web.html"], 
+["linux", "Linux相关","/posts/linux.html"],
+["read", "读书笔记","/posts/read.html"], 
+["other", "杂记","/posts/other.html"],
+["about", "关于","/about.html"]
+]
 
-# Filtering Content
-show_drafts:  null
-limit_posts:  0
-future:       true
-unpublished:  false
+paginate: 8
+paginate_path: "posts/page:num"
+timezone: America/Los_Angeles
 
-# Conversion
-markdown:     kramdown
-highlighter:  rouge
-lsi:          false
-excerpt_separator: "\n\n"
+collections:
+  docs:
+    output: true
 
-# Serving
-detach:       false
-port:         4000
-host:         127.0.0.1
-baseurl:      "" # does not include hostname
-
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
-
-
-#Site config
-title: 9leg
-description: java技术文章
-keywords: Java
-url: http://9leg.com
-feed: /atom.xml
-favicon: /images/shortcut.jpg
-
-#Nav config
-nav:
-  - text: 首页
-    url: /index.html
-  - text: 分类目录 
-    url: /categories.html
-  - text: 文章归档
-    url: /archives.html
-  - text: 关于我
-    url: /about.html
-  - text: 友情链接
-    url: /links.html
-
-#Author config
-author:
-    name: lotsalu
-    email: lotsalu.me@gmail.com
-    imageLink: /images/header.jpg
-    simpleIntro: ……………………
-    detailIntro:
-      <p>loading</p>
-      <p>^.</p>
-      <p></p>
-
-#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
-follow:
-  - class: icon-rss
-    url: /atom.xml
-  - class: icon-weibo
-    url: http://weibo.com/
-  - class: icon-facebook
-    url: http://facebook.com/
-  - class: icon-github-alt
-    url: https://github.com/zJiaJun/
-  - class: icon-twitter
-    url: http://twitter.com/
-  - class: icon-google-plus
-    url: ^^
-
-#Links
-customLinks:
-  - item:
-    - text: 技术小黑屋
-      url: http://droidyue.com/
-    - text: Jekyll
-      url: http://jekyllrb.com
-    - text: Jekyll Theme
-      url: http://www.zhanxin.info/themes.html
-    message: Friends    
-  - item:
-    - text: Java Code Geeks
-      url: http://www.javacodegeeks.com/
-    - text: Web Developer
-      url: http://www.fromdev.com/
-    - text: BeginnersBook
-      url: http://beginnersbook.com/
-    - text: Mkyong
-      url: http://www.mkyong.com/
-    - text: Java By Nataraj
-      url: http://javabynataraj.blogspot.in/
-    message: About Java
-
-#googleAnaly, your id link UA-12345678-X
-googleAnaly:
-  config: false
-  id: ^^^
-
-#baidu tongji
-baiduTongji:
-  config: true
-  id: ^^^
-
-#comment config
-disqus:
-  config: false
-  id: ^^^^
-
-duoshuo:
-  config: true
-  id: ^
-
-#baidu share config
-baiduShare:
-  config: true
-  
+gems:
+ - jekyll-paginate

@@ -1,76 +1,30 @@
-#[9leg.com](http://9leg.com/)
+Jekyll博客模板
+================
+
+#### 1.浏览
+http://www.panxw.com, 支持PC与智能机访问。  
+
+#### 2.模板使用
+修改_config.yml与_includes目录下相关文件进行配置。  
+评论代码推荐“多说”，统计代码推荐cnzz。  
+模板可任意使用，但请保留本站友情链接。  
+
+#### 3.联系作者
+QQ交流群: 168563980  
+Github：https://github.com/panxw  
 
 
-###请使用自己申请的网站统计Id，评论Id等
+## License
 
-如今网络是开源的年代，茫茫多的框架。
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-既然我的博客放在gitHub上，也表示了开源，希望有更多的人来使用Jekyll模版。
+       http://www.apache.org/licenses/LICENSE-2.0
 
-但发现很多人Fork我的项目后，并不根据自己情况修改任何配置，而是直接写post了。
-
-这导致我的网站统计和评论带来了不必要的麻烦，简单的说就是，你网站中的评论被我管理，这不是你想要看到的吧。
-
-访问你网站的流量PV和UV等，算在我的统计范围内，这也不是你想要看到的吧(其实我很乐意的...)。
-
-那么就简单的说下，如何个性化自定义配置网站。
-
-**_config.yml**,网站的许多配置都在这个文件中，导航栏信息配置，网站作者信息配置，友链配置，评论和网站统计等。
-
-下面是我的配置：
-
-```
-googleAnaly:
-
-  config: false
-
-  id: Your-id-is-here
-```
-
-```
-baiduTongji:
-	
-  	config: true
-  	
-  	id: Your-id-is-here
-```
-
-```
-disqus:
-
-  config: false
-  
-  id: Your-id-is-here
-```
-
-```
-duoshuo:
-
-  config: true
-  
-  id: Your-id-is-here
-```
-
-```
-baiduShare:
-
-  config: true
-```
-可以使用google分析和baidu统计对网站进行流量多方面的信息跟踪查看，在这里使用了baidu统计，**注意：请设置你申请的统计Id**。
-
-在这里不使用google分析的原因是加载ga.js时间过长或者根本无法请求，原因你懂的。
-
-disqus和duoshuo都是网站评论设置，使用了多说，国内还是比较好的，**注意：请设置你申请的多说Id**。
-
-baiduShare是baidu分享插件，比较实用。
-
-最后根据自己的实际情况，修改_layouts下的两个模版html文件，稍微有点html知识都可以看懂并修改。
-
-
-##重复,请使用自己申请的网站统计Id，评论Id等。
-
-什么？怎么申请？google去...
-
-
-
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
